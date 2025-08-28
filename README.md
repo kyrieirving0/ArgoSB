@@ -21,7 +21,7 @@
 #### 6、所有代理协议都无需域名（除了argo固定隧道），支持单个或多个代理协议任意组合并快速重置更换
 【 已支持：AnyTLS、Any-reality、Vless-xhttp-reality、Vless-reality-vision、Shadowsocks-2022、Vmess-ws、Hysteria2、Tuic、Argo临时/固定隧道 】
 
-#### 7、如需要多样的功能，推荐使用VPS专用四合一脚本[Sing-box-yg](https://github.com/yonggekkk/sing-box-yg)
+#### 7、如需要多样的功能，推荐使用VPS专用四合一脚本[Sing-box-yg](https://github.com/kyrieirving0/sing-box-yg)
 
 ----------------------------------------------------------
 
@@ -61,7 +61,7 @@
 
 ### 脚本以 ```变量名称="变量值"的单个或多个组合 + 主脚本``` 的形式运行
 
-主脚本：```bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)```
+主脚本：```bash <(curl -Ls https://raw.githubusercontent.com/kyrieirving0/argosb/main/argosb.sh)```
 
 必选其一的协议端口变量：```vmpt=""```、```vmpt="" argo="y"```、```vlpt=""```、```xhpt=""```、```anpt=""```、```arpt=""```、```hypt=""```、```tupt=""```、```sspt=""```
 
@@ -71,49 +71,49 @@
 
 * ### 模版1：多个任意协议组合运行
 ```
-sspt="" vlpt="" vmpt="" hypt="" tupt="" xhpt="" anpt="" arpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+sspt="" vlpt="" vmpt="" hypt="" tupt="" xhpt="" anpt="" arpt="" bash <(curl -Ls https://raw.githubusercontent.com/kyrieirving0/argosb/main/argosb.sh)
 ```
 
 * ### 模版2：主流TCP或UDP单个协议运行
 
 Vless-Reality-Vision协议节点
 ```
-vlpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+vlpt="" bash <(curl -Ls https://raw.githubusercontent.com/kyrieirving0/argosb/main/argosb.sh)
 ```
 
 Vless-Xhttp-Reality协议节点
 ```
-xhpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+xhpt="" bash <(curl -Ls https://raw.githubusercontent.com/kyrieirving0/argosb/main/argosb.sh)
 ```
 
 Shadowsocks-2022协议节点
 ```
-sspt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+sspt="" bash <(curl -Ls https://raw.githubusercontent.com/kyrieirving0/argosb/main/argosb.sh)
 ```
 
 AnyTLS协议节点
 ```
-anpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+anpt="" bash <(curl -Ls https://raw.githubusercontent.com/kyrieirving0/argosb/main/argosb.sh)
 ```
 
 Any-Reality协议节点
 ```
-arpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+arpt="" bash <(curl -Ls https://raw.githubusercontent.com/kyrieirving0/argosb/main/argosb.sh)
 ```
 
 Vmess-ws协议节点
 ```
-vmpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+vmpt="" bash <(curl -Ls https://raw.githubusercontent.com/kyrieirving0/argosb/main/argosb.sh)
 ```
 
 Hysteria2协议节点
 ```
-hypt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+hypt="" bash <(curl -Ls https://raw.githubusercontent.com/kyrieirving0/argosb/main/argosb.sh)
 ```
 
 Tuic协议节点
 ```
-tupt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+tupt="" bash <(curl -Ls https://raw.githubusercontent.com/kyrieirving0/argosb/main/argosb.sh)
 ```
 
 * ### 模版3：开启CDN优选的节点运行
@@ -122,17 +122,17 @@ Argo临时/固定隧道运行优选节点，类似无公网的IDX-Google-VPS容�
 
 Argo临时隧道CDN优选节点
 ```
-vmpt="" argo="y" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+vmpt="" argo="y" bash <(curl -Ls https://raw.githubusercontent.com/kyrieirving0/argosb/main/argosb.sh)
 ```
 
 Argo固定隧道CDN优选节点，必须填写端口(vmpt)、域名(agn)、token(agk)
 ```
-vmpt="端口" argo="y" agn="解析的CF域名" agk="CF获取的token" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+vmpt="端口" argo="y" agn="解析的CF域名" agk="CF获取的token" bash <(curl -Ls https://raw.githubusercontent.com/kyrieirving0/argosb/main/argosb.sh)
 ```
 
 80系端口、回源端口的CDN优选节点
 ```
-vmpt="80系端口、指定随机端口" cdnym="ip已解析的CF域名" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+vmpt="80系端口、指定随机端口" cdnym="ip已解析的CF域名" bash <(curl -Ls https://raw.githubusercontent.com/kyrieirving0/argosb/main/argosb.sh)
 ```
 ---------------------------------------------------------
 
@@ -194,7 +194,7 @@ vmpt="80系端口、指定随机端口" cdnym="ip已解析的CF域名" bash <(cu
 
 ----------------------------------------------------------
 ### 感谢你右上角的star🌟
-[![Stargazers over time](https://starchart.cc/yonggekkk/ArgoSB.svg)](https://starchart.cc/yonggekkk/ArgoSB)
+[![Stargazers over time](https://starchart.cc/kyrieirving0/ArgoSB.svg)](https://starchart.cc/kyrieirving0/ArgoSB)
 
 ----------------------------------------------------------
 ### 声明：所有代码来源于Github社区与ChatGPT的整合
